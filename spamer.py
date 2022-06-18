@@ -2,20 +2,20 @@ import time
 import pyautogui
 import pywhatkit
 
+
 def send_messange_inst():
-    mobiles = ['+79105282157', '+79206220744', '+79206180948']
-    message = 'финальный тест на масс спам без задержек'
+    mobiles = ['+79036368772', '+79105282157', '+79206220744', '+79206180948' ]
+    message = 'new test, увелечение быстродействия'
 
     for mobile in mobiles:
-        pywhatkit.sendwhatmsg_instantly(mobile, message, wait_time=9)
+        pywhatkit.sendwhatmsg_instantly(mobile, message, wait_time=7)
         pyautogui.moveTo(1134, 939)
         pyautogui.click()
-        pyautogui.moveTo(1852, 956)
+        pyautogui.moveTo(1700, 956)
         pyautogui.click()
         pyautogui.press('enter')
         time.sleep(1)
-        pyautogui.moveTo(590, 20)
-        pyautogui.click()
+        pyautogui.hotkey('ctrl', 'w')
 
 
 def main():
